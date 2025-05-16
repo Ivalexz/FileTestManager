@@ -1,14 +1,14 @@
 #pragma once
 #include <string>
 
-class Admin { // êëàñ äëÿ çáåðåæåííÿ äàíèõ ïðî àäì³íà
+class Admin { // ÃªÃ«Ã Ã± Ã¤Ã«Ã¿ Ã§Ã¡Ã¥Ã°Ã¥Ã¦Ã¥Ã­Ã­Ã¿ Ã¤Ã Ã­Ã¨Ãµ Ã¯Ã°Ã® Ã Ã¤Ã¬Â³Ã­Ã 
 private:
     std::string username;
     std::string password;
 
 public:
-    Admin(){}
-    Admin(std::string username, std::string password) {
+    explicit Admin(){}
+    explicit Admin(std::string username, std::string password) {
         this->username = username;
         this->password = password;
     }
